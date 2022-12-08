@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(15, 15, 66);
+  animation-name: background-change;
+  animation-timing-function: 1;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}
+
+@keyframes background-change {
+  0% {
+    background-color: rgb(15, 15, 66);
+  }
+  25% {
+    background-color: darkblue;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: rgb(58, 58, 231);
+  }
+  1000% {
+    background-color: aqua;
+  }
+  
+}
+

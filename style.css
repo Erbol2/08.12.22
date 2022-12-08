@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(15, 15, 66);
   animation-name: background-change;
   animation-timing-function: 1;
@@ -27,4 +30,34 @@ body {
   }
   
 }
-
+h1 {
+  color: white;
+  font-size: 100px;
+  text-shadow: 10px 10px 0 black;
+  animation-name: text-rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: 1;
+}
+@keyframes text-rotate {
+  0% {
+    transform: skew(0deg);
+    color: white;
+  }
+  25% {
+    transform: skew(-30deg);
+    color: yellow;
+  }
+  50% {
+    transform: skew(0deg);
+    color: blueviolet;
+  }
+  75% {
+    transform:skew(30deg);
+    color:aqua;
+  }
+  100% {
+    transform: skew(0deg);
+    color: white;
+  }
+}
